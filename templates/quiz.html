@@ -1,0 +1,20 @@
+<html>
+<title>The "Totally-Not-An-Aspect-Quiz" Quiz</title>
+<body>
+
+{% for q in question %}
+    <h3>{{q.prime}}<br>{{q.question}}</h3>
+    {% for w in words %}
+	{{w.pop.word}}
+    {% endfor %}
+    <br><br>
+    {% for w in words %}
+	{{w.pop.word}}
+    {% endfor %}
+    <br>
+
+{% endfor %}
+<br><br><br>
+<a href = '/'>Home</a>|<a href = '/admin'>Admin</a>|<a href = '/quiz'>Refresh</a>
+</body>
+</html>
